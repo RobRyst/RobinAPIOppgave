@@ -26,36 +26,4 @@ export function GET() {
     const data = await request.json();
     return NextResponse.json(data, { status: 200 });
   }
-/*
-
-export function GET() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-        resolve(catfacts);
-    });
-})};
-
-
-export async function POST(data) {
-    return await axios.post('/api/catfacts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-}
-Prøvde men fikk den ikke til å funke med koden
-export default function handler(req, res) {
-    if (req.method === 'POST') {
-        const data = req.body;
-        catfacts.push(data);
-        res.status(201).json({ success: true, data: catfacts });
-    } else if (req.method === 'PUT') {
-        res.status(405).end();
-    } else {
-        res.status(200).json({ success: true, data: catfacts });
-    }
-}
-*/
 
